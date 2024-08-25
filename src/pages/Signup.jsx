@@ -31,7 +31,7 @@ const Signup = () => {
         alert("All fields are required");
       } else {
         const response = await axios.post(
-          "http://localhost:1000/api/v1/sign-up",
+          "https://bookheaven-server-1.onrender.com/api/v1/sign-up",
           Data
         );
         setData({ username: "", email: "", password: "", address: "" });
